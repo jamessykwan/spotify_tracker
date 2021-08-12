@@ -8,12 +8,14 @@ REDIRECT_URL = 'http://127.0.0.1:8000/'
 
 SCOPES = 'user-library-read'
 
-url = SPOTIFY_AUTHORIZE #Add base auth url
-url += '?client_id=' + CLIENT_ID #Add client ID
-url += '&response_type=code'
-url += '&redirect_uri=' + REDIRECT_URL
-url += '&show_dialog=true'
-url += '&scope=' + SCOPES
+auth_url = SPOTIFY_AUTHORIZE #Add base auth url
+auth_url += '?client_id=' + CLIENT_ID #Add client ID
+auth_url += '&response_type=code'
+auth_url += '&redirect_uri=' + REDIRECT_URL
+auth_url += '&show_dialog=true'
+auth_url += '&scope=' + SCOPES
+
+print(auth_url)
 
 def getCode():
-    
+    return
